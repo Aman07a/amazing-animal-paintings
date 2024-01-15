@@ -16,8 +16,8 @@ export class CartService {
     return this.http.post<Product>(this.apiUrl, product);
   }
 
-  getCartItems(): Observable<Product> {
-    return this.http.get<Product>(this.apiUrl);
+  getCartItems(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.apiUrl);
   }
 
   clearChat(): Observable<void> {
